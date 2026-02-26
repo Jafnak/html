@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 80px;
+        height: 80px;
+        background-color: red;
+        animation-name: move;
+        animation-duration: 5s;
+        animation-delay: 3s;
+      }
+      @keyframes move {
+        from {
+          transform: translateX(0); /* X axis l ,move =name given*/
+        }
+        to {
+          transform: translateY(700px); /*ending*/
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //global scope-->we can access the outside variable (name) to any of these.
+      let name = "Ammu";
+      function greet() {
+        console.log("Hello" + name);
+      }
+      greet();
+
+      if (true) {
+        console.log("My name is " + name);
+      }
+
+      //function scope -->variable declared inside functions
+
+      function test() {
+        let age = 21;
+        console.log(`My age is ${age}`);
+      }
+      test();
+      //   console.log(age); //error-cannot access age inside function
+
+      if (true) {
+        let n = 100;
+        console.log(n);
+      }
+      //   console.log(n); //cannot access n inside block
+      if (true) {
+        var num = 10;
+        console.log(num);
+      }
+      console.log(num);
+    </script>
+  </body>
+</html>

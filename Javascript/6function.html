@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //function without argument + without return
+      //   function greet() {
+      //     console.log("Hello how are you");
+      //   }
+      //   greet();
+      //function with argument + without return
+      function greethi(name) {
+        console.log("Hi" + name);
+      }
+      greethi("jafna");
+
+      //function with argument+with return
+      function add(a, b) {
+        return a + b;
+      }
+      add(5, 4);
+      function add1() {
+        let a = 10;
+        b = 30;
+        return a + b;
+      }
+      console.log(add1());
+
+      function sub() {
+        let a = 30;
+        let b = 20;
+        console.log(a - b);
+      }
+      sub();
+      function sub1() {
+        let a = 50;
+        let b = 20;
+        return a - b;
+      }
+      console.log(sub1());
+
+      function sub2(x, y) {
+        console.log(x - y);
+      }
+      sub2(60, 40);
+      function sub3(x, y) {
+        return x - y;
+      }
+      console.log(sub3(100, 50));
+
+      //FUNCTION EXPRESSION  -->assigned to a variable
+
+      //Without arg + without return
+
+      const greet = function () {
+        console.log("Hi");
+      };
+      greet();
+
+      //with arg + without return
+
+      const greet1 = function (name) {
+        console.log("Hi" + name);
+      };
+      greet1("Jaff");
+
+      //without arg +with return
+
+      const greet2 = function () {
+        return "hello";
+      };
+      console.log(greet2());
+
+      const greet4 = function (name) {
+        return "hello" + name;
+      };
+      console.log(greet4("Jaff"));
+
+      //ARROW FUNCTIONS -->having a short syntax
+
+      //arrow fn without arg+without return
+      const a = () => {
+        console.log("Hiii from arrow fn");
+      };
+      a();
+
+      //arrow fn without arg +with return
+      const b1 = () => {
+        return "Hello from arr";
+      };
+      console.log(b1());
+
+      //arrow fn with arg +without return
+      const c = (age) => {
+        console.log("My age is" + age);
+      };
+      c(25);
+
+      //arrow fn with arg+with return
+
+      const d = (name) => {
+        return "Hello my name is" + name;
+      };
+      console.log(d("Sam"));
+
+      const addition = (a, b) => {
+        return a + b;
+      };
+      console.log(addition(4, 5));
+
+      //simple one with arg+with return
+      const add4 = (x, y) => x + y;
+      console.log(add4(10, 10));
+
+      //IIFE --> Immediately invoked function expression
+
+      //without arg+without return
+      (function () {
+        console.log("Hii from iife");
+      })();
+
+      //with arg + without return
+      (function (name) {
+        console.log(name + " from iife");
+      })("Samrood");
+
+      //without args + with return
+      let result = (function () {
+        return "hello hi from iife with return+0 args";
+      })();
+      console.log(result);
+
+      //with args + with return
+
+      let sum = (function (a, b) {
+        return a + b;
+      })(20, 40);
+      console.log(sum);
+      let student = {
+        name: "jaffna",
+        sayhello: function () {
+          console.log("Hello Iam " + this.name);
+        },
+      };
+      student.sayhello();
+
+      //HOISTING
+      console.log(hoist);
+      // var hoist = 10; //undefined
+      //above one is same as below code i.e
+      var hoist;
+      console.log(hoist); //undefined
+      //only declarations moves top of their scope
+
+      // console.log(fn);
+      // let fn = 10; --no hoisting
+
+      // console.log(fns);
+      // const fns = 10; --no hoisting
+
+      sayhello();
+      function sayhello() {
+        console.log("Hiiiii...........");
+      }
+    </script>
+  </body>
+</html>

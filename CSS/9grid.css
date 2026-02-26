@@ -1,0 +1,49 @@
+/*.container{
+    display: grid;
+    /* grid-template-rows: 100px 150px 80px 100px;   distance between row is given here there are 4 so 4 space in px is given */
+    /* background-color: lightblue;
+    grid-template-columns:  100px 100px 100px;
+    grid-template-rows: 80px 80px 80px; */
+    /* align-items: start; */
+    /* height: 300px; */
+    /* width: 400px; */
+    /* justify-content: start; */
+     /* justify-content: end; */
+      /* justify-content: space-around; */
+      /* align-content: center; */
+      /* align-content: end; */
+    /* gap: 10px; */
+
+ 
+/* .box1{
+    background-color: lightcoral;
+    /* height: 60px; */
+    /* width: 60px; */
+    /* grid-row-start: 2 */
+    /* grid-row-start: 2;  2nd grid muthal starteyyum 2,3 in 1 row and 1 in next row */
+/* }
+.box2{
+    background-color: lightcoral;
+    grid-row-end: 2;
+}
+.box3{
+    background-color: lightcoral;
+}  */
+  .container{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 10px;
+    grid-template-rows: 150px;
+    background-color: lightgreen;
+    height: 600px;
+  }
+ .box1{
+    background-color: lightblue;
+    /* grid-column-start: 2;
+    grid-column-end: 4;   =   grid-column: 2/4;*/
+   /* grid-row: 2/4; */
+ }
+ .box3{
+    background-color: violet;
+    align-self: center;
+ }

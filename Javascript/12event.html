@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- inline method
+
+    <button onclick="alert('button clicked')">
+      Button inline (no js)Click
+    </button>
+
+    event property method
+
+    <button id="btn">Click</button>
+    <button id="event">Click-event</button>
+    <script>
+      let btn = document.getElementById("btn");
+      btn.onclick = function () {
+        alert("Hellooo....");
+      };
+
+      //addEventListener()
+      let btn1 = document.getElementById("event");
+      btn1.addEventListener("click", function () {
+        alert("Event method");
+      });
+      btn1.addEventListener("click", function () {
+        alert("Second alert");
+      });
+    </script> -->
+
+    <!-- <div
+      id="box"
+      style="height: 100px; width: 100px; background-color: red"
+    ></div>
+
+    <script>
+      // mouse events
+      let box = document.getElementById("box");
+      box.addEventListener("mouseover", function () {
+        box.style.backgroundColor = "yellow";
+      });
+      box.addEventListener("mouseout", function () {
+        box.style.backgroundColor = "red";
+      });
+    </script> -->
+
+    <!-- keyboard events -->
+    <!-- <input type="text" id="keyboard-event" placeholder="Enter something" /> -->
+    <!-- <script>
+      let input = document.getElementById("keyboard-event");
+      input.addEventListener("keydown", function () {
+        console.log("Key pressed");
+      });
+      input.addEventListener("keyup", function () {
+        console.log("key released");
+      });
+    </script> -->
+
+    <!-- Form events -->
+
+    <!-- <form id="myForm" action="">
+      <input id="inp" type="text" placeholder="Enter your name" /><br /><br />
+      <button type="submit">Submit</button>
+    </form> -->
+    <!-- <script>
+      let form = document.getElementById("myForm");
+      let input = document.getElementById("inp");
+      form.addEventListener("submit", function (event) {
+        //to prevent page reload we introduce preventDefault() with a parameter
+        event.preventDefault();
+        alert("Form submitted");
+      });
+      form.addEventListener("input", function () {
+        console.log("Typing.." + input.value);
+      });
+    </script> -->
+
+    <!-- Focus event -->
+
+    <input type="text" id="focus" placeholder="click me" />
+    <script>
+      let f = document.getElementById("focus");
+      f.addEventListener("focus", function () {
+        f.style.backgroundColor = "yellow";
+      });
+      f.addEventListener("blur", function () {
+        f.style.backgroundColor = "grey";
+        f.style.color = "black";
+      });
+    </script>
+  </body>
+</html>

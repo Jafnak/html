@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   let arr = [10, 20, 30, 40, 50];
+      //   let result = arr.slice(1, 4);
+      //   let result2 = arr.slice(3);
+      //   console.log(result);
+      //   console.log(result2);
+
+      let arr = [10, 20, 30, 40, 50];
+      arr.splice(1, 2); //removes 1st and 2nd index ie 20,30
+      console.log(arr);
+
+      //add or inserting elements
+      //start at index 2-->5
+      //delete count-->0
+      //insert-->3,4
+      let a = [1, 2, 5];
+      a.splice(2, 0, 3, 4);
+      console.log(a);
+
+      //replace
+      //start at index 1st index->2
+      //remove 1 elements
+      //add 20
+      let b = [1, 2, 3];
+      b.splice(1, 1, 20);
+      console.log(b);
+
+      //join()
+
+      let p = [1, 2, 3];
+      b = a.join();
+      console.log(b);
+      console.log(typeof b);
+
+      let alpha = ["j", "a", "f", "f"];
+      console.log(alpha.join(""));
+
+      let words = ["hello", "world"];
+      console.log(words.join(" "));
+
+      let date = [12, 2, 2026];
+      console.log(date.join("-"));
+      console.log(date);
+
+      const d = new Date();
+      console.log(d);
+      document.write(d);
+      document.write("<br>");
+
+      document.write(d.getFullYear());
+      document.write("<br>");
+
+      document.write(d.getMonth());
+      document.write("<br>");
+
+      document.write(d.getDate());
+      document.write("<br>");
+
+      document.write(d.getDay());
+      document.write("<br>");
+
+      document.write(d.getTime());
+      document.write("<br>");
+
+      document.write(d.getHours());
+      document.write("<br>");
+
+      document.write(d.getMinutes());
+      document.write("<br>");
+
+      document.write(d.getSeconds());
+      document.write("<br>");
+
+      document.write(d.getMilliseconds());
+      document.write("<br>");
+
+      let da = new Date();
+      da.setFullYear(2025);
+      document.write(da);
+      document.write("<br>");
+      da.setMonth(0);
+      document.write(da);
+      document.write("<br>");
+      da.setDate(14);
+      document.write(da);
+      document.write("<br>");
+      da.setHours(10);
+      document.write(da);
+      document.write("<br>");
+      da.setMinutes(30);
+      document.write(da);
+      document.write("<br>");
+      da.setSeconds(50);
+      document.write(da);
+      document.write("<br>");
+
+      da.setFullYear(2000);
+      da.setMonth(6);
+      da.setDate(30);
+      document.write(da);
+    </script>
+  </body>
+</html>

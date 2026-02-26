@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <h1 id="heading">old text</h1>
+    <h3 class="fruit">Apple</h3>
+    <h2 class="flower">Rose</h2> -->
+
+    <p id="text">Hello World</p>
+    <h2 id="js">Javascript</h2>
+
+    <script>
+      //1
+      //   let text1 = document.getElementById("heading");
+      //   //   text1.innerText = "<b>New text</b>";
+
+      //   let text2 = document.querySelector(".fruit");
+      //   text2.innerText = "Orange";
+
+      //   let text3 = document.querySelector("h2");
+      //   text3.innerText = "Lilly";
+
+      //   let text11 = document.getElementById("heading");
+      //   text11.innerHTML = "<b>new text</b>"; //accepting html tags and it is applied but content is applied for innerText
+
+      let element = document.getElementById("text");
+      element.remove();
+
+      let element2 = document.getElementById("js");
+      element2.remove(); //removed the text
+
+      //2
+
+      let x = document.getElementById("text");
+      x.style.color = "red";
+
+      let y = document.getElementById("js");
+      y.style.color = "blue";
+      y.style.fontSize = "30px";
+      y.style.backgroundColor = "yellow";
+    </script>
+  </body>
+</html>

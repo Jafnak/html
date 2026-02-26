@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .block-inline {
+        display: inline;
+        background-color: lightblue;
+      }
+      .parent {
+        display: flex;
+        /* flex-direction : column-reverse; */
+        /* flex-direction:row,row-reverse,column */
+        /* flex-wrap: wrap; conjested arrangment is avoided
+        flex-flow: row wrap; */
+        /* flex-flow:row,colomn wrap,column nowrap */
+        /* justify-content: space-evenly; space-between,space-around,evenly,flex-start,flex-end */
+        /* align-items: center,flex-start,flex-end,stretch; */
+        /* align-items: flex-end; */
+        background-color: chartreuse;
+        height: 600px;
+        width: 300px;
+      }
+
+      .box {
+        width: 200px;
+        /* height: 80px; */
+        /* background-color: lightpink;
+        margin: 10px;
+        flex-grow: 1;
+      /* }
+      .box:nth-child(1) {
+        /* flex-grow: 1; */
+        flex-shrink: 200;
+        background-color: lightpink;
+        height: 80px;
+        margin: 5px;
+      }
+      .box:nth-child(2) {
+        /* flex-grow: 3; */
+        flex-shrink: 50;
+        background-color: lightpink;
+        height: 80px;
+        margin: 5px;
+      }
+      .box:nth-child(3) {
+        /* flex-grow: 1; */
+        flex-shrink: 100;
+        background-color: lightpink;
+        height: 80px;
+        margin: 5px;
+      }
+      .box1 {
+        width: 60px;
+        height: 60px;
+        background-color: yellow;
+        /* order: 3; */
+        margin: 5px;
+      }
+      .box2 {
+        width: 60px;
+        height: 60px;
+        background-color: yellow;
+        align-self: flex-end;
+        /* order: 2; */
+        margin: 5px;
+      }
+      .box3 {
+        width: 60px;
+        height: 60px;
+        background-color: yellow;
+        /* order: 1; */
+        margin: 5px;
+        align-self: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="box1">A</div>
+      <div class="box2">B</div>
+      <div class="box3">C</div>
+    </div>
+  </body>
+</html>

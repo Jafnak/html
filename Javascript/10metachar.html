@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // \d
+      //   let text = "My number is 1234";
+      //   console.log(text.match(/\d/)); //1
+      //   console.log(text.match(/\d/g)); //4
+
+      //   //\D
+      //   let text1 = "A1b2Cd3";
+      //   console.log(text1.match(/\D/g));
+
+      //   // \s
+      //   let text2 = "Hello World";
+      //   console.log(text2.match(/\s/g));
+
+      //   // \S
+      //   let text3 = "Hello How are you";
+      //   console.log(text3.match(/\S/g));
+
+      // \b
+      //   let text = "cat eats catfood scatter";
+      //   console.log(text.match(/\bcat/g)); //fetching the word cat from the starting of the word,scatter->cat in middle
+      //   console.log(text.match(/\bcat\b/g)); // ->setting a boundary  not before or after any words other than cat
+
+      //   // \w
+      //   let text1 = "hello _123!";
+      //   console.log(text1.match(/\w/g));
+
+      //   // \W
+      //   let text2 = "hello _123!";
+      //   console.log(text2.match(/\W/g));
+
+      let text = "Hellooo world";
+      console.log(text.match(/\o+ /g));
+      console.log(text.match(/lo*/g));
+
+      let text2 = "color colour";
+      console.log(text2.match(/colou?r/g)); //u is there or not
+    </script>
+  </body>
+</html>

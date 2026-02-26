@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      th,
+      td {
+        border: 1px solid black;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      /* div p {
+        color: blue;
+      } */
+      .parent > p {
+        color: pink;
+      }
+      h2 + p {
+        color: green;
+      }
+      .box {
+        width: 80px;
+        height: 80px;
+        background-color: red;
+        animation-name: move;
+        animation-duration: 10s;
+        animation-delay: 5s;
+      }
+      @keyframes move {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(700px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>Hello</div>
+    <div>Good morning</div>
+    <span>Hiii</span>
+    <span>Good Afternoon</span>
+
+    <ol>
+      <li type="A">Jaff</li>
+      <li type="A">Sam</li>
+    </ol>
+    <iframe
+      srcdoc="<a href='https://www.flipkart.com/'>Flip</a>"
+      target="_blank"
+      frameborder="1"
+    ></iframe>
+
+    <table>
+      <tr>
+        <th rowspan="2">Name</th>
+        <th colspan="2">Mark</th>
+        <th rowspan="2">Total</th>
+      </tr>
+      <tr>
+        <th>Maths</th>
+        <th>Science</th>
+      </tr>
+      <tr>
+        <td>Ammu</td>
+        <td>20</td>
+        <td>30</td>
+        <td>40</td>
+      </tr>
+      <tr>
+        <td>Arum</td>
+        <td>10</td>
+        <td>20</td>
+        <td>30</td>
+      </tr>
+    </table>
+    <h1>Hello&emsp;World</h1>
+    <select name="" id="">
+      <optgroup label="couple">
+        <option value="">Jaff</option>
+        <option value="">Sam</option>
+      </optgroup>
+    </select>
+
+    <div class="parent">
+      <h1>Jaff</h1>
+      <p>hi am jaff</p>
+
+      <div>
+        <h1>sam</h1>
+        <p>i love sam</p>
+      </div>
+    </div>
+
+    <h2>Sneha</h2>
+    <p>jaff</p>
+
+    <div class="box"></div>
+  </body>
+</html>

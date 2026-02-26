@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/7pos.css" />
+    <style>
+      .red-box {
+        background-color: red;
+        height: 120px;
+        width: 120px;
+        position: absolute;
+        z-index: 1;
+      }
+      .blue-box {
+        width: 120px;
+        background-color: blue;
+        height: 120px;
+        position: absolute;
+        z-index: 2; /*  overlapping red-box since it is having less value*/
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div>hello</div>
+    <div class="parent">
+      Parent
+      <div class="child">Child</div>
+    </div>
+
+    <div class="parent1">
+      Parent
+      <div class="child1">Child</div>
+    </div> -->
+    <!-- <div class="sticky-box">Iam fixed</div>
+    <div class="content">
+      scroll down <br /><br /><br /><br /><br /><br /><br /><br /><br />
+      more content <br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </div> -->
+    <!-- <div class="red-box">
+      <h1>RED</h1>
+    </div>
+    <div class="blue-box">
+      <h1>BLUE</h1>
+    </div> -->
+    <div class="navbar">Navbar</div>
+    <div class="content">
+      page content <br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </div>
+    <!-- <div class="box">box</div> -->
+    <span class="block-span">span1</span>
+    <span class="block-span">span2</span>
+    <span class="block-span">span3</span>
+    <span class="block-span">span4</span>
+  </body>
+</html>

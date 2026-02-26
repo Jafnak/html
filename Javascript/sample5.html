@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //do while
+      let x = 10;
+      do {
+        console.log("Hello");
+      } while (x < 5);
+
+      let i = 1;
+      do {
+        console.log(i);
+        i++;
+      } while (i <= 5);
+
+      //for- in objects
+      let student = {
+        name: "Jaff",
+        age: 25,
+        address: "Mpm",
+      };
+      for (let key in student) {
+        console.log(key + ":" + student[key]); //student[key]=value
+      }
+
+      for (let key in student) {
+        if (key == "name") {
+          console.log(key + ":" + student[key]); //student[key]=value
+        }
+      }
+      //for-of
+
+      let nums = [10, 20, 30, 40, 50];
+      for (let i of nums) {
+        console.log(i);
+      }
+
+      let text = "Java";
+      for (let char of text) {
+        console.log(char);
+      }
+
+      let alpha = ["a", "b", "c", "d"];
+      for (let i in alpha) {
+        // console.log(i);
+        console.log(alpha[i]);
+      }
+
+      for (let i of alpha) {
+        console.log(i);
+      }
+    </script>
+  </body>
+</html>

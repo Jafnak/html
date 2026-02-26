@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //test
+
+      //   let text = "I have a cat";
+      //   console.log(/cat/.test(text));
+
+      //match
+      //   let text = "I have a cat";
+      //   console.log(text.match(/cat/));
+
+      //search
+      //   let text = "I have a cat";
+      //   console.log(text.search(/a/)); //-1 cause not present
+
+      //replace
+      //   let text = "I have a cat";
+      //   console.log(text.replace(/cat/, "dog"));
+
+      //using constructors
+
+      //   let text = "I have a pen";
+      //   let pattern = new RegExp("pen");
+
+      //   console.log(pattern.test(text));
+      //   console.log(text.match(pattern));
+      //   console.log(text.search(pattern));
+      //   console.log(text.replace(pattern, "book"));
+
+      let s = "web Technology class";
+      let pattern = /tech/i; //if i is given then both capital and small letter is considered as same else not
+
+      console.log(pattern.test(s));
+      console.log(s.match(pattern));
+
+      //   let text = "cat dog cat";
+      //   //   console.log(text.match(/cat/));
+      //   console.log(text.match(/cat/g)); //g->global ie every cat is shown not only the the first one in string
+      //   console.log(/cat/g.test(text));
+      //   console.log(text.search(/cat/g));
+      //   console.log(text.replace(/cat/g, "lion"));
+
+      //   let text = "apple";
+      //   console.log(/[abc]/.test(text)); //a or b or c include or not
+      //   console.log(text.match(/[abc]/));
+      //   console.log(text.search(/[abc]/));
+      //   console.log(text.replace(/[abc]/, "x"));
+
+      let text1 = "abcxyz";
+      console.log(/[^abc]/.test(text1));
+      console.log(text1.match(/[^abc]/g));
+      console.log(text1.search(/[^abc]/));
+      console.log(text1.replace(/[^abc]/g, "$"));
+
+      let text = "abc123";
+      console.log(/[^0-9]/.test(text));
+      console.log(text.match(/[^0-9]/g));
+      console.log(text.search(/[^0-9]/));
+      console.log(text.replace(/[^0-9]/g, "$"));
+
+      let textt = "abc123";
+      console.log(/[0-9]/.test(textt));
+      console.log(textt.match(/[0-9]/g));
+      console.log(textt.search(/[0-9]/));
+      console.log(textt.replace(/[0-9]/g, "$"));
+    </script>
+  </body>
+</html>

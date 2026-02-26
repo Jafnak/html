@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = 5;
+      if (a > 10) {
+        document.write("a is greater than 10");
+      } else {
+        document.write("value of a is less than 10");
+      }
+
+      document.write("<br>");
+      let age = 30;
+      if (age >= 18) {
+        document.write("You are eligible for votting");
+      }
+
+      let num = 1;
+      if (num % 2 == 0) {
+        console.log("Even number");
+      } else {
+        console.log("Odd number");
+      }
+
+      let n = 0;
+      if (n > 0) {
+        console.log("Positive number");
+      } else if (n < 0) {
+        console.log("Negative number");
+      } else {
+        console.log("number is zero");
+      }
+      document.write("<br>");
+      let marks = 40;
+      if (marks >= 90) {
+        document.write("A+");
+      } else if (marks >= 80) {
+        document.write("A");
+      } else if (marks >= 50) {
+        document.write("B+");
+      } else {
+        document.write("Failed");
+      }
+      document.write("<br>");
+      let day = 5;
+      switch (day) {
+        case 1:
+          document.write("Sunday");
+          break;
+        case 2:
+          document.write("Monday");
+          break;
+        case 3:
+          document.write("Tuesday");
+          break;
+        case 4:
+          document.write("Wednesday");
+          break;
+        case 5:
+          document.write("Thursday");
+          break;
+        case 6:
+          document.write("Friday");
+          break;
+        case 7:
+          document.write("Satday");
+          break;
+        default:
+          document.write("Invalid");
+      }
+
+      for (let i = 1; i <= 5; i++) {
+        console.log(i);
+      }
+      for (let i = 2; i <= 10; i += 2) {
+        console.log(i);
+      }
+      for (let i = 5; i >= 1; i--) {
+        console.log(i);
+      }
+      for (let i = -1; i >= -5; i--) {
+        console.log(i);
+      }
+
+      //sum of numbers
+
+      let sum = 0;
+      for (let i = 0; i <= 5; i++) {
+        sum += i;
+      }
+      console.log(sum);
+
+      //odd numbers using loops
+      for (let i = 0; i <= 10; i++) {
+        if (i % 2 != 0) {
+          console.log(i);
+        }
+      }
+
+      //multiplication table
+
+      let mulnum = 5;
+      for (let i = 1; i <= 10; i++) {
+        console.log(i + "x" + mulnum + "=" + mulnum * i);
+      }
+
+      let numbers = [10, 20, 30, 40];
+      for (let i = 0; i < numbers.length; i++) {
+        console.log(numbers[i]);
+      }
+
+      //sum of array elements
+      let numb = [2, 3, 6, 1];
+      s = 0;
+      for (let i = 0; i < numb.length; i++) {
+        s += numb[i];
+      }
+      console.log(s);
+
+      //while
+
+      let i = 1;
+      while (i <= 5) {
+        console.log(i);
+        i++;
+      }
+      //sum using while
+      let j = 1;
+      sumw = 0;
+      while (j <= 5) {
+        sumw += j;
+        j++;
+      }
+      console.log(sumw);
+    </script>
+  </body>
+</html>

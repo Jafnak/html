@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* li:first-child {
+              color: red;
+            }
+            p:first-child {
+              color: blue;
+            }
+            h1:first-child {
+              color: green;
+            }
+            h3:last-child {
+              color: orange;
+            }
+            li:last-child {
+              color: brown;
+            } */
+      /* li:nth-child(2) {
+              background-color: violet;
+            }
+            p:nth-child(4) {
+              color: gold;
+            }
+            h3:nth-child(3) {
+              background-color: darkblue;
+            }
+            li:nth-child(even) {
+              background-color: lightblue;
+            }
+            li:nth-child(odd) {
+              background-color: lightcoral;
+            }
+            div *:nth-child(even) {
+              color: blue;
+          }*/
+
+      /* h1:first-of-type {
+              color: red;
+            }
+            p:last-of-type {
+              background-color: yellow;
+            }
+            h1:last-of-type {
+              background-color: green;
+            } */
+      /* [type] {
+              border: 2px solid blue;
+            }
+            [href] {
+              color: red;
+            }
+            [id] {
+              color: orange;
+            } */
+      [type="text"] {
+        border: 2px solid greenyellow;
+      }
+      [id="jaff"] {
+        color: white;
+        background-color: burlywood;
+      }
+      /* [id~="name"] {
+        background-color: lightblue;
+      } */
+      /* [id|="name1"] {
+        color: blue;
+      }
+      [id$="name1"] {
+        background-color: yellow; /* ending="name1" */
+      /* } */
+      /* [id*="name1"] {
+        background-color: brown;
+      } */
+      [id^="name1"] {
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <ul>
+      <li>Red</li>
+      <li>Blue</li>
+      <li>green</li>
+    </ul>
+    <div>
+      <p>hello</p>
+      <h1>hi</h1>
+      <p>hello</p>
+      <p>hello world</p>
+
+      <h1>hello</h1>
+      <h3>byee</h3>
+      <p>Jaff</p>
+    </div> -->
+
+    <ul>
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+    </ul>
+
+    <input type="text" />
+
+    <a href="">Google</a>
+    <h1 id="jaff">Jafna K</h1>
+    <input type="number" />
+
+    <h1 id="name">Sam</h1>
+    <h2 id=" name">Jaff</h2>
+    <!--  space is ignored while "~" is given-->
+    <h3 id="_name">Arun</h3>
+    <h4 id="name1">Sara</h4>
+    <h4 id="name1-">Alex</h4>
+    <h4 id="name1-name">Teena</h4>
+    <h4 id="name1-jack">Jack</h4>
+    <h4 id="name1 name">Reenu</h4>
+    <h4 id="jaff name1">Sneha</h4>
+    <!--name1 ,name1- is taken others is not-->
+  </body>
+</html>
