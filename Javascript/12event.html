@@ -81,8 +81,8 @@
 
     <!-- Focus event -->
 
-    <input type="text" id="focus" placeholder="click me" />
-    <script>
+    <!-- <input type="text" id="focus" placeholder="click me" /> -->
+    <!-- <script>
       let f = document.getElementById("focus");
       f.addEventListener("focus", function () {
         f.style.backgroundColor = "yellow";
@@ -91,6 +91,70 @@
         f.style.backgroundColor = "grey";
         f.style.color = "black";
       });
+    </script> -->
+
+    <!-- <div id="box"></div>
+    <button id="btn">Click</button>
+    <ul id="list"></ul> -->
+    <!-- <script>
+      let newel = document.createElement("p");
+      newel.textContent = "Hi jaff";
+      let box = document.getElementById("box");
+      box.append(newel);
+
+      let btn = document.getElementById("btn");
+      let list = document.getElementById("list");
+
+      btn.addEventListener("click", function () {
+        let li = document.createElement("li");
+        li.textContent = "You are amazing";
+        list.append(li);
+      });
+
+      let h1 = document.createElement("h1");
+      h1.textContent = "heading";
+      // document.body.append(h1);
+      document.body.prepend(h1);
+
+      
+    </script> -->
+
+    <!-- <script>
+      setInterval(function () {
+        console.log("Hello");
+      }, 1000); //time in milliseconds
+    </script> -->
+
+    <!-- <p id="news">Headlines</p> -->
+    <!-- <script>
+      let p1 = document.getElementById("news");
+      setInterval(function () {
+        p1.textContent = "Today's headline";
+      }, 2000);
+    </script> -->
+
+    <!-- <script>
+      // let interval = setInterval(function () {
+      //   console.log("Helloo......");
+      // }, 1000);
+      // setTimeout(function () {
+      //   clearInterval(interval);
+      // }, 7000);
+    </script> -->
+
+    <!-- counter -->
+    <p id="count">0</p>
+    <script>
+      let num = 0;
+      let counter = document.getElementById("count");
+      let interval = setInterval(function () {
+        num += 1;
+        counter.textContent = num;
+      }, 1000);
+
+      setTimeout(function () {
+        clearInterval(interval);
+      }, 5000);
     </script>
   </body>
 </html>

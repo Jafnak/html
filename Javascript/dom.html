@@ -6,17 +6,56 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- <h1 id="heading">old text</h1>
+    <!-- <h1 id="demo">hello World</h1>
+    <p class="text">paragraph1</p>
+    <p class="text">paragraph2</p>
+    <h2>Javascript</h2>
+    <h2>python</h2>
+    <p id="first">first para</p>
+    <p class="jk">jaff1</p>
+    <p class="jk">jaff2</p> -->
+    <h1 id="heading">old text</h1>
     <h3 class="fruit">Apple</h3>
-    <h2 class="flower">Rose</h2> -->
-
+    <h2 class="flower">Rose</h2>
+    <!-- 
     <p id="text">Hello World</p>
-    <h2 id="js">Javascript</h2>
+    <h2 id="js">Javascript</h2> -->
 
     <script>
+      let element = document.getElementById("heading");
+      element.textContent = "New text"; //textContent->hidden text is shown as in span or something
+      console.log(element);
+
+      let el2 = document.querySelector(".fruit");
+      el2.textContent = "Orange";
+
+      let el3 = document.querySelector("h2");
+      el3.textContent = "sunflower";
+
+      // let el = document.getElementById("demo");
+      // console.log(el);
+
+      // let p1 = document.getElementsByClassName("text");
+      // console.log(p1);
+
+      // let h = document.getElementsByTagName("h2");
+      // console.log(h);
+
+      // let p2 = document.querySelector("#first");
+      // console.log(p2);
+
+      // let p3 = document.querySelector(".jk");
+      // console.log(p3);
+
+      // let p4 = document.querySelectorAll(".jk");
+      // console.log(p4);
+
+      // let h1 = document.querySelectorAll("h2");
+      // console.log(h1);
+
       //1
       //   let text1 = document.getElementById("heading");
-      //   //   text1.innerText = "<b>New text</b>";
+      //   //   text1.innerText = "<b>New text</b>";  //hidden text is not shown no less performance than textContent
 
       //   let text2 = document.querySelector(".fruit");
       //   text2.innerText = "Orange";
@@ -27,21 +66,21 @@
       //   let text11 = document.getElementById("heading");
       //   text11.innerHTML = "<b>new text</b>"; //accepting html tags and it is applied but content is applied for innerText
 
-      let element = document.getElementById("text");
-      element.remove();
+      // let element = document.getElementById("text");
+      // element.remove();
 
-      let element2 = document.getElementById("js");
-      element2.remove(); //removed the text
+      // let element2 = document.getElementById("js");
+      // element2.remove(); //removed the text
 
       //2
 
-      let x = document.getElementById("text");
-      x.style.color = "red";
+      // let x = document.getElementById("text");
+      // x.style.color = "red";
 
-      let y = document.getElementById("js");
-      y.style.color = "blue";
-      y.style.fontSize = "30px";
-      y.style.backgroundColor = "yellow";
+      // let y = document.getElementById("js");
+      // y.style.color = "blue";
+      // y.style.fontSize = "30px";
+      // y.style.backgroundColor = "yellow";
     </script>
   </body>
 </html>
