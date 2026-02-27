@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <script>
+      //   console.log(a);
+      //   console.log("Hiii");
+
+    //   try {
+    //     console.log(a);
+    //   } catch (error) {
+    //     console.log("error occured");
+    //     console.log(error.message);
+    //   } finally {
+    //     console.log("Program completed");
+    //   }
+    // </script> -->
+
+    <script>
+      try {
+        let num = -4;
+        if (num < 0) {
+          throw new Error("Number cannot be negative");
+        } else {
+          console.log("Valid number");
+        }
+      } catch (error) {
+        console.log(error.message);
+      }
+
+      try {
+        let name = "jaff";
+        if (name === "") {
+          throw new Error("Enter a name");
+        } else {
+          console.log("Hello " + name);
+        }
+      } catch (error) {
+        console.log(error.message);
+      }
+    </script>
+  </body>
+</html>
